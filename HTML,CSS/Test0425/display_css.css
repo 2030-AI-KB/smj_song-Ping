@@ -1,0 +1,35 @@
+/* display 속성 :: 요소들의 배치를 하는 데에 사용 */
+/* 
+block :: 요소 하나가 너비 전체를 차지하게끔 하는 값
+    (block으로 설정된 요소는 크기 및 여백 설정이 가능하다.)
+inline :: 요소의 내용(content) 크기에 딱 맞추어 공간이 지정되고
+    position 속성의 값을 static으로 하여 위치 배정하는 값
+    (inline으로 설정된 요소는 크기 및 여백 설정이 불가하다.)
+inline-block :: 크기 및 위치 배정은 inline 형식을 차용
+    (크기 및 여백 설정은 block 형식을 차용)
+*/
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+/* float 속성 :: 웹 페이지의 레이아웃 설정할 때 사용 */
+input {
+    display: block;
+    margin-top: 17px;
+}
+
+div#div_left {
+    /* div 태그 중에서 div_left를 id값으로 가지는 태그에 스타일 지정하라. */
+    float: left;
+    text-align: right;
+    margin-left: 35%;
+}
+
+div#div_right {
+    /* div 태그 중에서 div_left를 id값으로 가지는 태그에 스타일 지정하라. */
+    float: right;
+    text-align: left;
+}

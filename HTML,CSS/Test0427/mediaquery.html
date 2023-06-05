@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: aquamarine;
+    }
+
+    @media screen and (max-width:700px) {
+        body {
+            background-color: darkblue;
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        body {
+            background-color: cadetblue;
+        }
+    }
+
+    @media screen and (orientation:portrait) {
+
+        /* landscape : 화면이 가로 모드일 때 */
+        /* portrait : 화면이 세로 모드일 때 */
+        body {
+            background-color: azure;
+        }
+    }
+
+        @media screen and (max-width:600px) {
+            body {
+                background-color: aqua;
+            }
+        }
+
+        /* 범위설정은 min-width로 하는 것이 안정적이다 */
+        @media screen and (min-width:600px) {
+            body {
+                background-color: pink;
+            }
+        }
+
+        @media screen and (min-width:1000px) {
+            body {
+                background-color: yellowgreen;
+            }
+        }
+</style>
+
+<body>
+
+</body>
+
+</html>

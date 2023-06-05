@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 뷰포트 메타 태그 : '반응형 웹'을 만들 때 필요한 태그-->
+    <!-- 뷰포트 : 브라우저 창의 영역/크기 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹</title>
+</head>
+<style>
+    /* width, height, max-height, max-width, min-width, min-height */
+    /* max-height/width : 'max값에 한계를 가진' 너비 및 높이값 설정 */
+    /* 최대값은 width나 height로 지정된 값이나 원본 사진의 너비 및 높이를 따른다. */
+    /* min-width/height : 'min 값에 한계를 가진' 너비 및 높이값 설정 */
+    /* 최소값은 width나 height로 지정된 값이나 원본 사진의 너비 및 높이를 따른다. */
+    img {
+        /* max-width: 70%;
+        min-width: 50%; */
+        max-width: 70%;
+    }
+    source{
+    }
+</style>
+
+<body>
+    <!-- 뷰포트의 크기에 따라 글자 사이즈를 다르게 하고 싶다면? vw 사용 -->
+    <!-- srcset, media 속성 -->
+    <picture>
+        <source srcset="https://banbbom.com/data/froala/210216/19f5d2f3955dc3da56e68306a0ee7bc1ea6ea500.jpg"
+            media="(max-width:600px)">
+        <source
+            srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJytgVjc8BD_ZDq3bAOwBfvIeaacueKAoSuFXZF-8tvYKb5x7zTW-_J7ZDBAHN3SWs3v8&usqp=CAU"
+            media="(max-width:1200px)">
+        <source srcset="https://tgzzmmgvheix1905536.cdn.ntruss.com/2019/12/6e72618d11274c1985713a586b1e2f57">
+        <img>
+    </picture>
+    <br>
+    <!-- <label style="font-size: 5vw">눈누난나 ♬</label> -->
+</body>
+
+</html>

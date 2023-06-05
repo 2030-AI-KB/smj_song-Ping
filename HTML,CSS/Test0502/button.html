@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="alert(`버튼을 클릭햇어요!`)">버튼을 클릭햇어요</button>
+    <p id="text" onclick="Print()">클릭?</p> -->
+    <button id="btn">버튼</button>
+    <script>
+        // function Print(){
+        //     document.getElementById("text").innerHTML = "Hello world";
+        // }
+        // window.onload=function(){
+        //     document.write("웹페이지 로드가 완료되었습니다.");
+        // }
+        // 이벤트종류
+        // click : 특정 html 요소 클릭
+        //  load : 브라우저가 페이지 로드를 완료
+        // change : html요소 변경
+        // mouseover : 특정 html  요소 위로 이동
+        let button = document.getElementById("btn");
+        button.addEventListener("click", show);
+        function show(){
+            alert("버튼을 눌렀습니다.");
+        }
+    </script>
+</body>
+</html>

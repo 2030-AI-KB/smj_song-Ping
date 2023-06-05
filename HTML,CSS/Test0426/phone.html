@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img {
+        /* margin: 0 auto; */
+        display: inline;
+        width: 200px;
+        height: 200px;
+
+        animation-name: tran;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    button {
+        float: center;
+    }
+
+    @keyframes tran {
+        0% {
+            width: 100px;
+            height: 100px;
+        }
+
+        100% {
+            width: 140px;
+            height: 140px;
+        }
+
+    }
+</style>
+
+<body>
+    <h2 style="text-align: center;">전화가 왔습니다. 받으시겠습니까?</h2>
+    <img src="./img/수신아이콘.png">
+    <button onclick="location.href='./phone1.html'">전화 받기</button>
+    <img src="./img/수신거절.png">
+    <button onclick="location.href='./phone2.html'">수신 거절</button>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+/* css 파일 주석 */
+/* 인라인 스타일 :: 각 태그의 style 속성 통해서 작성 */
+    /* <p style="font-size:20px;"></p> */
+/* 내부 css :: html 파일의 head 태그-style 태그 넣어서 작성 */
+/* 외부 css :: css 파일 별도로 작성 & html 파일에 포함 */
+
+/* 선택자{
+    속성명1: 속성값1;
+    속성명2: 속성값2;
+    ...
+} */
+
+/* css 박스 모델 */
+/* 1. 크기 단위 :: px, %, em(배수 단위) */
+    /* 크기 속성 :: width(너비), height(높이), max-width, max-height, min-width, min-height */
+/* 2. 패딩(padding), 마진(margin), 테두리(border) */
+    /* 패딩이랑 마진은 여백을 주는 속성*/
+    /* 패딩 :: 테두리(border)랑 내용(content) 간의 여백을 주는 속성(백그라운드 색상 지정시 영향 받음) */
+    /* 마진 :: 테두리(border)랑 외부의 요소 간의 여백을 주는 속성 */
+    /* top: 위쪽, bottom: 아래쪽, left: 왼쪽, right: 오른쪽 */
+/* 3. 아웃라인(outline-style, outline-color) :: 테두리 바깥을 꾸며주는 역할 */
+body{
+    background-color:bisque;
+}
+/* label{
+    width:50%;
+    border: 10px solid darkslateblue;
+    padding-top: 30px;
+    padding-left:10px;
+    margin-left:50px;
+    background-color:chartreuse;
+    outline-style:dotted;
+    outline-color:red;
+} */
+
+/* 태그선택자, id선택자, class선택자 */
+
+/* id선택자(#) */
+/* 태그명#스타일 적용하고자 하는 id명 {
+    속성명: 속성값;
+    ...
+} 
+(태그명 생략 시, id명 같은 모든 태그에 적용된다.)
+(태그명 생략되면 *이 들어가있는 상태이다.) */
+label#change_blue{
+    color:blue;
+}
+
+/* 클래스 선택자(.) */
+/* 태그명.클래스명{
+    속성명: 속성값;
+    ...
+}
+(태그명 생략 시, class명 같은 모든 태그에 적용된다.)
+(태그명 생략되면 *이 들어가있는 상태이다.) */
+p.comment{
+    outline-style:solid;
+    outline-color:crimson;
+}
+
+/* 전체 선택자 */
+*{
+    font-size:20px;
+}
+
+
+/* 자손 선택자 */
+/* 태그명1 태그명2{
+    속성명: 속성값;
+    ...
+} 
+"태그명1 안에 있는 태그명2에 대한 스타일을 지정하였다." */
+div p{
+    background-color:forestgreen;
+}
+
+/* 자식 선택자 */
+/* 태그명1 > 태그명2{
+    속성명: 속성값;
+    ...
+} */
+div>p{
+    color:white;
+}

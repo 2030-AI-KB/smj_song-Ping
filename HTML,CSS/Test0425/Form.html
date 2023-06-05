@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>Form 복습</title>
+    <!-- link 태그 :: 특정 파일을 해당 파일에 포함한다(연결한다). -->
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <!-- form 태그 속성 :: action, method -->
+    <!-- action 속성 :: form에서 입력을 받은 뒤, 이동할 페이지(url, 파일 이름) -->
+    <!-- method 속성 :: form에서 입력받은 값들을 어떻게 처리할지의 함수 지정-->
+    <!-- get(서버가 클라이언트에게 데이터 입력 요청할 때 사용) -->
+    <!-- post(서버에 데이터를 보낼 때 사용) -->
+    <form action="input.html">
+        <p>입력창으로 이동하시겠습니까?</p>
+        <hr> <!-- 선을 표현(height 값으로 두께 조정) -->
+        <button>이동하기</button>
+    </form>
+    <br>
+
+    <!-- css 박스 모델 -->
+    <!-- <h2>margin과 padding의 차이</h2> -->
+
+    <p id="change_back" class="first p">p 태그입니다.</p>
+    <h3 id="change_back" class="first h">h3 태그입니다.</h3>
+    <label class="first label">label 태그입니다.</label>
+
+    <!-- div(division) 태그 : 영역을 구분하는 태그  -->
+    <div>
+        <!-- div입장에서, 해당 p 태그는 자식 태그 -->
+        <p>div 밑에 있는 p 태그입니다.</p>
+        <span>
+            <!-- div 입장에서, 해당 p 태그는 자손 태그 -->
+            <p>div 밑에 span 밑에 있는 p 태그입니다.</p>
+        </span>
+    </div>
+</body>
+
+</html>

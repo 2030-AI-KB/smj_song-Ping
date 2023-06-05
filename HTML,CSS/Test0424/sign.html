@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="SignUp_css.css">
+</head>
+
+<body>
+    <h1 style="font-size:200%;">
+        예제 :: input폼을 이용하여 회원가입 폼 만들기
+    </h1>
+    <br>
+    <br>
+
+    <div>
+        <div
+            style="margin:0 auto; border: 5px solid rgb(140, 205, 102); background-color:whitesmoke; width:60%; padding:30px;">
+            <h2>회원가입 페이지에 오신 걸 환영합니다!</h2>
+            <h4>아래의 정보를 입력해주시길 바랍니다.</h4>
+            <br>
+            <br>
+            <h3>회원 정보 (User Information)</h3>
+            <hr style="width:80%; background-color:lightgrey; border:1px solid lightgrey; height: 1px;">
+            <br>
+
+            <form>
+                <label style="font-size:20px;"><b>이름 </b></label>
+                <input type="text" id="name" name="name" style="width: 100px; font-size: 15px"> <br>
+
+                <label style="font-size:20px;"><b>영어 이름 </b></label>
+                <input type="text" id="name_en" name="name_en" style="width: 100px; font-size: 15px"> <br>
+
+                <label style="font-size:20px; margin-right:5px;"><b>성별 </b></label>
+                <form>
+                    <input type="radio" id="gender" name="gender" value="male">
+                    <label for="male">남성</label>
+                    <input type="radio" id="gender" name="gender" value="female">
+                    <label for="female">여성</label>
+                    <input type="radio" id="gender" name="gender" value="etc">
+                    <label for="etc">기타</label>
+                </form>
+
+                <label style="font-size:20px;"><b>주민등록번호 </b></label>
+                <input type="text" id="first_num" name="first_num" style="width:100px;"> -
+                <input type="text" id="second_num" name="second_num" style="width:100px;">
+                <br>
+
+                <label style="font-size:20px;"><b>생년월일 </b> </label>
+                <input type="date" id="birth" name="birth" style="width:130px;">
+                <br>
+
+                <label style="font-size:20px;"><b>이메일</b></label>
+                <input type="text" id="first_email" style="width:100px;">@
+                <select id="sec_email" style="height:23px; width:120px;">
+                    <option value="naver">naver.com</option>
+                    <option value="daum">daum.net</option>
+                    <option value="google">google.com</option>
+                    <option value="nate">nate.com</option>
+                    <option value="kakao">kakao.com</option>
+                </select> <br>
+
+                <!-- <label style=""></label> -->
+
+                <label style="font-size:20px;"><b>집 전화 </b></label>
+                <input type="text" id="first_home" style="width:40px;"> -
+                <input type="text" id="sec_home" style="width:50px;"> -
+                <input type="text" id="thi_home" style="width:50px;"> <br>
+
+                <label style="font-size:20px;"><b>휴대폰 </b> </label>
+                <select id="first_tel" style="height:23px;">
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                    <option value="012">012</option>
+                    <option value="017">017</option>
+                    <option value="018">018</option>
+                </select> -
+                <input type="text" id="sec_tel" style="width:50px;"> -
+                <input type="text" id="thi_tel" style="width:50px;">
+                <button id="authen" style="margin-left:10px; width:100px; height: 30px;
+                    background-color:lemonchiffon; border: 2px solid gray">전화번호 인증
+                </button>
+                <br>
+
+                <label style="font-size:20px;"><b>집 주소</b></label>
+                <input type="text" id="search_home" style="width:200px;">
+                <button id="search" style="margin-left:10px; width:130px; height: 30px; 
+                    background-color:lemonchiffon; border: 2px solid gray">도로명주소 검색
+                </button> <br>
+                <label style="font-size:20px;"><b>상세주소 입력</b></label>
+                <input type="text" id="home_detail" style="width:300px">
+                <br>
+
+                <label style="font-size:20px;"><b>알게 된 경로</b></label>
+                <form style="margin-top:10px;">
+                    <input type="checkbox" id="route" name="route" value="banner">
+                    <label for="banner">현수막</label>
+                    <input type="checkbox" id="route" name="route" value="visit">
+                    <label for="visit">기관 방문</label>
+                    <input type="checkbox" id="route" name="route" value="tel">
+                    <label for="tel">전화</label>
+                    <input type="checkbox" id="route" name="route" value="recommand">
+                    <label for="recommand">지인 추천</label>
+                    <input type="checkbox" id="route" name="route" value="search">
+                    <label for="search">검색</label>
+                </form>
+            </form>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h3>계정 정보 (Acount Information)</h3>
+            <hr style="width:80%; background-color:lightgrey; border:1px solid lightgrey; height: 1px;">
+            <br>
+
+            <form>
+                <label style="font-size:20px;"><b>아이디</b></label>
+                <input type="text" id="id" style="width:150px;">
+                <button id="confirm" style="margin-left:10px; width:80px; height: 30px; 
+                    background-color:lemonchiffon; border: 2px solid gray">중복확인
+                </button> <br>
+
+                <label style="font-size:20px"><b>비밀번호 입력</b></label>
+                <input type="password" id="pw1" style="width:200px;"> <br>
+                <label style="font-size:20px"><b>비밀번호 확인</b></label>
+                <input type="password" id="pw2" style="width:200px;">
+                <p>* 영문자 대소문자와 특수문자(!, ?, #, @ 등)과 조합하여 작성해주시길 바랍니다.</p>
+
+                <label style="font-size:20px; margin-right:5px;"><b>개인정보 유효기간</b></label>
+                <form>
+                    <input type="radio" id="use" name="use" value="three_month">
+                    <label for="three_month">3개월</label>
+                    <input type="radio" id="use" name="use" value="six_month">
+                    <label for="six_month">6개월</label>
+                    <input type="radio" id="use" name="use" value="one_year">
+                    <label for="one_year">1년</label>
+                    <input type="radio" id="use" name="use" value="drop">
+                    <label for="drop">탈퇴시까지</label>
+                </form>
+            </form>
+            <br>
+            <br>
+            <br>
+
+            <input type="submit" value="계정 생성" style="margin-right:10px; width:150px; height: 40px;
+            background-color:lemonchiffon; border: 2px solid gray; font-size:17px;">
+            <button style="margin-left:10px; width:150px; height: 40px;
+            background-color:lemonchiffon; border: 2px solid gray; font-size:17px;">취소</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <h1 style="font-size:200%;">
+        수고하셨습니다:)
+    </h1>
+</body>
+
+</html>

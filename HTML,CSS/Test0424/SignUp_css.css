@@ -1,0 +1,15 @@
+body {
+    background-image: url('https://i.pinimg.com/550x/e5/39/a0/e539a00e8324eba1bac132dae05152d5.jpg');
+    text-align: center;
+}
+
+h1 {
+    border: 5px solid mediumaquamarine;
+    background-color: whitesmoke;
+    color: darkslategrey;
+    padding: 30px;
+}
+
+input {
+    margin: 7px;
+}

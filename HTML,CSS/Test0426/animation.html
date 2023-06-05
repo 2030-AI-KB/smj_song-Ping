@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* transition: 기본값 -> 어떤 행동을 취했을 때 변화할 속성으로 '전환' */
+    /* animation : 속성 변화를 전체적으로 묶어서 변환을 줄 수 있다. */
+    p {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: salmon;
+        border: 3px solid black;
+
+        /* animation-name: bigger; */
+        /* 지정할 애니메이션 이름 */
+        animation-name: tran;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        /* 애니메이션 실행 시간 */
+    }
+
+    /* 이름이 bigger인 애니메이션 생성 */
+    /* 특정 태그에 종속적이지 않고, 변환의 행위만 정의를 해놓았다. */
+    @keyframes bigger {
+        from {
+            width: 100px;
+            height: 100px;
+        }
+
+        /* 시작속성 (0% 진행)*/
+        to {
+            width: 500px;
+            height: 500px;
+        }
+
+        /*  끝속성 (100%)*/
+    }
+
+    @keyframes tran {
+        0% {
+            width: 100px;
+            height: 100px;
+        }
+        25% {
+            width: 300px;
+            height: 300px;
+        }
+        50%{
+            width: 500px;
+            height: 500px;
+        }
+        75% {
+            width: 300px;
+            height: 300px;
+        }
+        100% {
+            width: 100px;
+            height: 100px;
+        }
+    }
+</style>
+
+<body>
+    <p>사각형</p>
+</body>
+
+</html>

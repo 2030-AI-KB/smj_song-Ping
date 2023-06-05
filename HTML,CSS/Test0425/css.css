@@ -1,0 +1,83 @@
+/* css 주석 적용 */
+/* css 파일은 html 파일에 스타일 적용하기 위해 존재 */
+
+/* 인라인 스타일 :: 특정 태그에 style 속성 추가하여 스타일 정의 */
+/* 내부 css :: html에 style 태그 추가하여 스타일 정의 */
+/* 외부 css :: css 파일 별도로 생성하여 html에 link */
+
+/* css 박스 모델 */
+/* 크기 단위: px, %, em */
+/* 
+margin :: 요소의 테두리와 외부 간의 공백을 표현
+padding :: 요소의 테두리와 내용(content) 간의 공백을 표현
+    (right, left, top, bottom)
+border :: 테두리
+outline :: 테두리 바깥으로 한번 더 긋는 선 
+*/
+
+/* (태그 선택자) */
+/* h2{
+    border:5px solid slateblue;
+    padding: 30px;
+    margin:30px; 
+    padding-left:50px;
+    margin-left:100px;
+} */
+
+/* 기초 문법 */
+/* 선택자{
+    속성명: 속성값;
+    ...
+} */
+/* 선택자는 복수로 작성할 수 있고, 선택자 종류를 섞어서 작성할 수도 있다. */
+
+/* id선택자(#) */
+/* id선택자를 통해 선택하면, 반드시 동일한 이름의 id만 스타일 적용 */
+/* 태그명#id값으로 선택자 지정하면, 지정한 태그에 대해서만 id 탐색한다. */
+p#change_back {
+    background-color: cadetblue;
+    border: 2px solid black;
+}
+
+/* class 선택자(.) */
+/* 태그명#class값으로 선택자 지정하면, 지정한 태그에 대해서만 class 탐색한다. */
+label.first {
+    outline-style: dotted;
+    outline-color: red;
+}
+
+/* 전체선택자(*) */
+/* 해당 css파일을 당겨오는 html의 모든 요소에 지정된 스타일 적용 */
+* {
+    color: salmon;
+}
+
+/* 자손선택자 */
+/* 부모태그 자식/자손태그{
+    속성명: 속성값;
+    ...
+} */
+div p {
+    text-align: center;
+}
+
+/* 자식 선택자 */
+/* 자손 태그는 취급하지 않고, 바로 밑에 있는 자식 태그만 취급하여 스타일 지정 */
+/* 부모태그 자식태그{
+    속성명 : 속성값;
+    ...
+} */
+div>p {
+    text-align: right;
+}
+
+/* 자식 선택자가 자손 선택자보다 우선순위가 높다. */
+
+/* 속성 선택자 */
+/* [속성]{
+    속성명 : 속성값;
+    ...
+} */
+[class] {
+    font-size: 20px;
+}

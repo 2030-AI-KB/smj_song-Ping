@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 연습</title>
+</head>
+<style>
+    input {
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <label> 이름 : </label>
+    <input type="text" id="name"><br>
+    <label> 나이 : </label>
+    <input type="text" id="age"><br>
+    <label> 성별 : </label>
+    <input type="text" id="gender"><br>
+    <button id="btn">전송</button>
+    <p id="text"></p>
+
+    <script>
+        let button = document.getElementById("btn");    //id가 btn인 요소를 변수 button으로 당겨
+
+        button.addEventListener("click", Show);
+
+        function Show() {
+            alert("입력 감사합니다");
+
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+            let gender = document.getElementById("gender").value;
+
+            document.getElementById("text").innerHTML =
+                `   <hr>
+                이름 : ${name}<br>
+                나이 : ${age}<br>
+                성별 : ${gender}<br>`;
+
+        }
+
+    </script>
+</body>
+
+</html>

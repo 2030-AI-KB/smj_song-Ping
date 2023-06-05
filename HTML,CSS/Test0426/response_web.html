@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img {
+        /* width, height, max-width, min-width, max-height, min-height */
+        /* width:70% */
+        /* img 태그의 너비를, 뷰포트 너비의 70%만큼 차지하게끔 하라.(한도x) */
+        /* max-width: 70%; */
+        /* img 태그의 너비를, 뷰포트 너비의 50%만큼 차지하게끔 하라.  */
+        /* 원본 사진의 크기가 최대이다  */
+        /* min-width: 100%; */
+        /* img 태그의 너비를, 뷰포트 너비의 40%만큼 차지하게끔 하라 */
+        /* 원본 사진의 크기가 최소이다. */
+        width: 50%;
+    }
+</style>
+
+<body>
+    <picture>
+        <!-- <img src="./img/수신거절.png"> -->
+        <source srcset="https://i3.ruliweb.com/img/5/7/5/F/575FE2F6387DCA002D" media="(max-width:500px)">
+        <source srcset="https://i1.ruliweb.com/img/5/7/5/F/575FE2F53874D00033">
+        <img src="https://i1.ruliweb.com/img/5/7/5/F/575FE2F53874D00033" style="width:auto">
+    </picture>
+</body>
+
+</html>

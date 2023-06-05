@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* display :: inline, block, inline-block */
+    /* p {
+        display: inline;
+        width: 300px;
+        border: 3px solid black;
+    } */
+
+    /* float */
+    p#p_left {
+        float: left;
+    }
+
+    p#p_right {
+        float: right;
+    }
+
+    /* css 선택자 */
+    /* 태그선택자, id선택자(태그명#id명), class선택자(태그명.), 전체선택자(*) */
+    /* 자손선택자(부모태그 자식/자손태그), 자식선택자, 속성선택자([속성명]) */
+    /* 선택자{
+        속성명 : 속성값;
+        ...
+    } */
+
+    /* transition  */
+    /* hover(마우스를 갖대댔을 때), active(마우쓰로 꾹 누르고 잇을 때), visited(방문하고난 뒤),
+        transition(전환 효과에 있어 전체적인 속성을 지정)
+        transition-property(전환 효과를 줄 속성명) 
+        transition-duration (전환 효과를 수행하는 시간)
+        transition-timing-function(전환 효과의 속도의 설정)
+        transition-delay(전환 효과 수행하기 전의 지연시간 설정)
+        */
+
+    p {
+        font-size: 20px;
+        color: blue;
+        transition-property: color;
+        transition-duration: 2s;
+        transition: font-size ease 1s;
+        /* 글씨 크기에 대한 전환을 2초간 수행한다. */
+        /* +1초간 지연시간을 두고, ease값을 적용하여 전환 속도를 지정한다. */
+        /* 실질적은 속성은 4가지, transition 속성을 통해 이 4가지를 한꺼번에 적용 가능 */
+    }
+
+    p:hover {
+        /* font-size: 100px; */
+        color: red;
+    }
+</style>
+
+<body>
+    <p id="p_left">p 태그입니다.</p>
+    <p id="p_right">p 태그입니다.</p>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>전환(transition)</title>
+</head>
+<style>
+    p {
+        background-color: salmon;
+        width: 150px;
+        height: 150px;
+
+        /* 트랜지션(css 속성) :: 전환
+            정해진 시간동안 요소의 속성값을 부드럽게 변화시키는 속성
+        => 이 속성을 통해서, 속성값에 따른 전환 효과를 주면서 지속시간도 설정*/
+        transition: width 1s, background-color 1s;
+        /* 1초정도 너비(width)의 전환을 수행한다. */
+        transition-timing-function: ease-out;
+        transition-delay: 3s;
+        /* linear :: 규칙적인 속도로 전환을 수행하게끔 한다. */
+        /* ease :: 전환의 처음과 끝을 천천히, 그 중간은 빠르게 수행 */
+        /* ease-in :: 천천히 시작해서 점차 빠르게 수행*/
+        /* ease-out :: 빠르게 시작해서 천천히 끝내며 수행*/
+        /* ease-in-out :: 천천히 시작했다가 천천히 끝내며 수행*/
+    }
+
+    p:active {
+        /* hover: 마우스를 갖다대었을 때, 변경되는 스타일 정의 */
+        width: 500px;
+        background-color: sandybrown;
+    }
+
+    p#lenear {
+        transition-timing-function: linear;
+    }
+
+    p#ease {
+        transition-timing-function: ease;
+    }
+
+    p#ease-in {
+        transition-timing-function: ease-in;
+    }
+
+    p#ease-out {
+        transition-timing-function: ease-out;
+    }
+
+    p#ease-in-out {
+        transition-timing-function: ease-in-out;
+    }
+</style>
+
+<body>
+    <p id="linear">사각형</p>
+    <p id="ease">사각형</p>
+    <p id="ease-in">사각형</p>
+    <p id="ease-out">사각형</p>
+    <p id="ease-in-out">사각형</p>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>Document</title>
+</head>
+<style>
+    p {
+
+        display: inline-block;
+        background-color: white;
+        border: 4px solid black;
+        width: 100px;
+        height: 300px;
+        font-size: 30px;
+        text-align: center;
+        transition: background-color 2s, font-size 2s, color 2s, width 2s, height 2s;
+        transition-timing-function: ease-out;
+    }
+
+    div {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    p#do:hover {
+        background-color: red;
+    }
+
+    p:hover#re {
+        background-color: rgb(247, 112, 23);
+    }
+
+    p:hover#mi {
+        background-color: yellow;
+    }
+
+    p:hover#pa {
+        background-color: green;
+    }
+
+    p:hover#sol {
+        background-color: blue;
+    }
+
+    p:hover#ra {
+        background-color: aquamarine;
+    }
+
+    p:hover#si {
+        background-color: purple;
+    }
+
+    p:active {
+        width: 120px;
+        font-size: 50px;
+        color: white;
+    }
+</style>
+
+<body>
+    <h2 style="text-align: center;">건반을 눌러주세요</h2>
+    <div>
+        <p id="do">도</p>
+        <p id="re">레</p>
+        <p id="mi">미</p>
+        <p id="pa">파</p>
+        <p id="sol">솔</p>
+        <p id="ra">라</p>
+        <p id="si">시</p>
+        <p id="do">도</p>
+    </div>
+</body>
+
+</html>
