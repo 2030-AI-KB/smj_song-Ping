@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2030여성지원 과정</title>
+</head>
+
+<body>
+    <script>
+        // let name = prompt("이름을 입력하세요.");
+        // let age = prompt("나이를 입력하세요.");
+        // let gender = confirm("여성이십니까? 맞다면, 확인을 눌러주시길 바랍니다.");
+
+        let test = [];
+        test[0] = prompt("이름을 입력하세요");
+        test[1] = prompt("나이를 입력하세요.");
+        test[2] = confirm("여성이십니까? 맞다면, 확인을 눌러주시길 바랍니다.");
+
+        if (test[2] === true) {
+            document.write("이름 : " + test[0] + "<br>" + "나이 : " + test[1] + "<br>" + "성별 : 여성 " + "<br>" + "<br>");
+        }
+        if (test[1] >= 20 && test[1] <= 39) {
+            document.write("환영합니다!" + "<br>"+ "2030 여성지원 과정에 지원 가능하십니다!" + "<br>");
+        }
+    </script>
+</body>
+
+</html>

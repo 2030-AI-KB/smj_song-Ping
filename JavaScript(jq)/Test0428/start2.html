@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 배열 : 여러 값을 갖는 공간(자바와는 달리, 모두 같은 타입의 정보일 필요 x)
+        let introduce = ["나나", 24, "Female", 'A', true];
+        let introduce2 = Array("나나", 24, "Female", 'A', true);
+        let introduce3 = new Array("나나", 24, "Female", 'A', true)
+        document.write("이름 : " + introduce[0] + "<br>");
+        document.write("나이 : " + introduce[1] + "<br>");
+        document.write("성별 : " + introduce[2] + "<br>");
+        document.write("혈액형 : " + introduce[3] + "<br>");
+
+        let student = [];
+        // 값 삽입
+        // 1.배열명[값을 넣을 인덱스 번호] = 추가할 값;
+        // ex) 제일 끝부분에 정보 추가할 시, 배열명[배열명.length] = 추가할 값
+        student[0] = "송민정";
+        // 2.배열명.push(추가할 요소);
+        student.push(25);
+        document.write(student[0] + "<br><br>");
+
+        // 값 삭제
+        // delete 배열명[삭제하고자 하는 정보의 인덱스];
+        delete student[0];
+        document.write(student[0] + "<br><br>");
+
+        // 함수 : 명령문들의 집합
+        // function 함수명(매개변수명, ....){
+        //  실행할 명령문
+        // }
+      
+        console.log("5+6의 결과 : " + add(5, 6));
+        // add(5,6)을 실행하면, 11 반환(x,y의 타입 : number)
+        console.log("Hello + world 의 결과: " + add("Hello", "world"));
+        // add("Hello", ":world")을 실행하면, "Helloworld" 반환(x,y의 타입 : string)
+    
+          // 함수 선언은 어디에서 해도 에러 발생x -> 필요할 때 즉시 생성해도 별 문제x
+          function add(x, y) {
+            return x + y;
+        }
+    </script>
+</body>
+
+</html>

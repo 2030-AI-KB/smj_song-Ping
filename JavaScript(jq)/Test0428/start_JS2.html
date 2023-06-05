@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인적사항 출력</title>
+</head>
+
+<body>
+    <script>
+        alert("인적사항을 차례대로 입력해주시길 바랍니다.");
+
+        let input_name = prompt("이름을 입력해주세요.");
+        let input_age = prompt("나이을 입력해주세요.");
+
+        let bool = confirm("이대로 진행하시겠습니까?");
+        if (bool === true) {
+            //줄바꿈 : 콘솔창("\n"), 홈페이지 구현(<br>)
+            document.write("이름 : " + input_name + "<br>" + "나이 : " + input_age);
+
+            console.log("이름 : " + input_name);
+            console.log("나이 : " + input_age);
+        } else {
+            console.log("취소 요청을 하였습니다.");
+            document.write("다시 실행해주시길 바랍니다.");
+        }
+
+    </script>
+</body>
+
+</html>
